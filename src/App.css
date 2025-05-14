@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.navbar-brand {
+  cursor: pointer;
+  overflow-x: hidden;
+  z-index: 100;
+}
+
+.navbar-item {
+  cursor: pointer;
+}
+
+#merch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.merch-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+  
+}
+
+.card {
+  width:300px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.card-img-top {
+  border-radius: 20px 20px 0 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.showroom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.merch-img {
+  border-radius: 10px;
+  max-width: 300px;
+  margin: 20px;
+}
+
+.price {
+  text-align: right;
+}
+
+.form {
+  margin: 20px;
+}
+
+.response {
+  text-align: center;
+  margin: 20px;
+}
