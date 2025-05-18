@@ -29,8 +29,11 @@ body {
 }
 
 #merch {
-  text-align: center;
   padding-top: 60px;
+}
+
+#merch h1 {
+  text-align: center;
 }
 
 .merch-container {
