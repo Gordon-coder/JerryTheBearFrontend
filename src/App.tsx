@@ -23,7 +23,12 @@ function App() {
       <div id="banner">
         <img src="assets/banner.png" alt="Jerry the Bear Banner"/>
       </div>
+      <div id="about">
+        <h1>About Jerry the Bear</h1>
+        <p>Jerry is a cute, chubby bear whom everyone in 2D loves. Despite his tinyness, he has quite an adventurous heart.</p>
+      </div>
       <div id="merch">
+        <h1>Merchandise</h1>
         <div className="merch-container">
           {merch.map(item => (
             <div key={item.id} className="card merch-item" onClick={() => window.location.href = `/merchandises/${item.id}`}>

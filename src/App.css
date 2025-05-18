@@ -19,11 +19,18 @@ body {
   width: 100%;
 }
 
+#about {
+  text-align: center;
+  padding-top: 60px;
+}
+
+#about p {
+  font-size: 20px;
+}
+
 #merch {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  text-align: center;
+  padding-top: 60px;
 }
 
 .merch-container {
