@@ -20,6 +20,9 @@ function App() {
   return (
     <>
       <Navbar />
+      <div id="banner">
+        <img src="assets/banner.png" alt="Jerry the Bear Banner"/>
+      </div>
       <div id="merch">
         <div className="merch-container">
           {merch.map(item => (

@@ -15,6 +15,10 @@ body {
   cursor: pointer;
 }
 
+#banner {
+  width: 100%;
+}
+
 #merch {
   display: flex;
   justify-content: center;
