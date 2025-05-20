@@ -12,7 +12,7 @@ function Merch() {
   const [error, setError] = useState("")
 
   async function fetchMerch() {
-      const response = await fetch('http://localhost:8000/api/merchandises/')
+      const response = await fetch('https://gordonpeng.pythonanywhere.com/api/merchandises/')
       const data = await response.json()
       setMerch(data.find(item => item.id == id))
     }
@@ -24,9 +24,7 @@ function Merch() {
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const formData = new FormData(e.target);
-    const response = await fetch(`http://localhost:8000/api/order/?${new URLSearchParams(formData)}`, {
-      method: 'GET'
-    });
+    const response = await fetch(`http://gordonpeng.pythonanywhere.com/api/order/?${new URLSearchParams(formData)}`);
     setError(await response.text());
   }
 

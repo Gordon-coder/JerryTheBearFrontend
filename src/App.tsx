@@ -8,7 +8,7 @@ function App() {
   const [merch, setMerch] = useState([])
 
   async function fetchMerch() {
-    const response = await fetch('http://localhost:8000/api/merchandises/')
+    const response = await fetch('https://gordonpeng.pythonanywhere.com/api/merchandises/')
     const data = await response.json()
     setMerch(data)
   }
